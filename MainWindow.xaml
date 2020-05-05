@@ -1,0 +1,32 @@
+﻿<Window x:Class="WPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Border Background="DarkCyan">
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="White" FontSize="40">MY APP</Label>
+        </Border>
+        <Grid Background="Black" Grid.Column="1">
+            
+        </Grid>
+        <StackPanel Grid.Row="1" Background="WhiteSmoke" x:Name="navContent">
+            
+        </StackPanel>
+        <Border Grid.Column="1" Grid.Row="1" x:Name="mainContent" Padding="20">
+            
+        </Border>
+    </Grid>
+</Window>
